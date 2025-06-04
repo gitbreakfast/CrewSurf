@@ -10,7 +10,7 @@ CrewSurf lets you talk to AI helpers without leaving your coding tool. It's like
 
 - 💬 **Chat With AI Helpers**: Ask questions and get help without switching windows
 - 🧠 **AI Remembers Your Code**: The AI can look at your code and understand it
-- 🌎 **Works Offline**: Uses your computer's own AI models - no internet needed!
+- 🌎 **Reduced API Dependency**: Uses local AI models through Ollama - no expensive API credits needed!
 - 🤝 **Team of Experts**: Different AI helpers with different skills work together
 - 🛠️ **Easy Setup**: Simple steps to get everything running
 
