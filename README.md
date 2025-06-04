@@ -1,6 +1,6 @@
 > Seamlessly merge CrewAI's multi-agent teams with Windsurf/Cascade for powerful human-in-the-loop development. Enable AI agent collaboration without leaving your IDE.
 
-![CrewSurf Banner](docs/images/banner.png)
+![CrewSurf Banner](docs/images/crewsurf.png)
 
 ## 🤔 What is CrewSurf?
 
