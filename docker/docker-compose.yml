@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  libgdx-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      # Mount your project directory into the container
+      - ${PROJECT_PATH:-../project}:/app/project
+    working_dir: /app/project
+    tty: true
+    stdin_open: true
+    command: bash

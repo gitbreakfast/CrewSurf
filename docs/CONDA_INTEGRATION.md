@@ -13,7 +13,10 @@ This guide helps you set up and run CrewSurf using conda environments within Win
 2. **Install CrewSurf and dependencies**:
    ```bash
    pip install git+https://github.com/gitbreakfast/crewsurf.git
+   pip install -U duckduckgo-search
    ```
+   
+   > **Note**: The `duckduckgo-search` package is required for the ChiefArchitect agent's web search capabilities. Without it, you'll encounter ImportError when running CrewSurf.
 
 ## 🚀 Running CrewSurf in Windsurf/Cascade
 

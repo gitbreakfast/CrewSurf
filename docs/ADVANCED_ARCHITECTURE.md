@@ -26,15 +26,16 @@ CrewSurf supports a sophisticated multi-agent hierarchy for complex software dev
   - Creates software architecture designs
   - Makes technology stack decisions
   
-- **LeadProgrammer** (Cascade):
-  - Bridges architecture and implementation
-  - Writes critical/complex code components
-  - Delegates routine tasks to SeniorPrincipalEngineer
-  - Provides code reviews and technical leadership
+- **StaffEngineer** (Cascade):
+  - Provides technical leadership across domains
+  - Designs critical systems and components
+  - Bridges architecture vision and implementation details
+  - Makes key technical decisions and trade-offs
+  - Guides SeniorPrincipalEngineer on implementation
 
 ### Implementation Layer
 - **SeniorPrincipalEngineer**:
-  - Implements code based on LeadProgrammer guidance
+  - Implements code based on StaffEngineer specifications
   - Converts architectural designs into working code
   - Implements routine functionality
   - Works closely with MasterDebugger
@@ -46,10 +47,11 @@ CrewSurf supports a sophisticated multi-agent hierarchy for complex software dev
   - Creates fixes for identified bugs
 
 ### Quality Assurance Layer
-- **SoftwareTest**:
-  - Creates test harnesses for functions
-  - Develops automated test suites
-  - Ensures code meets requirements
+- **SoftwareEngineerInTest**:
+  - Creates sophisticated testing frameworks
+  - Develops and maintains automated test suites
+  - Ensures code quality through comprehensive testing
+  - Implements CI/CD testing integrations
   - Reports bugs back to MasterDebugger
 
 - **HeadOfSoftwareQuality**:
@@ -59,23 +61,24 @@ CrewSurf supports a sophisticated multi-agent hierarchy for complex software dev
   - Makes final QA decisions
 
 ### Documentation Layer
-- **Writer**:
-  - Creates user documentation
-  - Documents code for developers
-  - Ensures clarity in communication
-  - Makes technical concepts accessible
+- **TechnicalWriter**:
+  - Creates professional user and developer documentation
+  - Produces API references and integration guides
+  - Ensures clarity and consistency in communication
+  - Translates complex technical concepts into accessible language
+  - Maintains documentation standards across the codebase
 
 ## 🔄 Custom Delegation Patterns
 
 CrewSurf implements sophisticated delegation patterns between agents:
 
-### LeadProgrammer <-> SeniorPrincipalEngineer Delegation
+### StaffEngineer <-> SeniorPrincipalEngineer Delegation
 This delegation pattern optimizes coding efficiency:
 
 ```
 ┌─────────────────┐    Architecture    ┌─────────────────┐
-│     Chief       │ ──────────────────►│      Lead       │
-│    Architect    │                    │    Programmer   │
+│     Chief       │ ──────────────────►│      Staff      │
+│    Architect    │                    │    Engineer     │
 └─────────────────┘                    └────────┬────────┘
                                                │
                                                │ Delegation
@@ -89,9 +92,9 @@ This delegation pattern optimizes coding efficiency:
 
 The workflow:
 1. ChiefArchitect provides technical specifications
-2. LeadProgrammer creates critical components and design patterns
-3. LeadProgrammer delegates routine implementation to SeniorPrincipalEngineer
-4. LeadProgrammer reviews code from SeniorPrincipalEngineer
+2. StaffEngineer designs critical systems and components
+3. StaffEngineer delegates implementation to SeniorPrincipalEngineer
+4. StaffEngineer reviews code and provides technical guidance
 5. Both collaborate with MasterDebugger for quality control
 
 ### MasterDebugger <-> SeniorPrincipalEngineer Collaboration
@@ -123,19 +126,19 @@ When code issues are detected:
 ```
 ┌─────────────────┐         ┌─────────────────┐
 │    Software     │ ───────►│     Head of     │
-│      Test       │ Report  │ Software Quality│
+│ Engineer in Test│ Report  │ Software Quality│
 └─────────────────┘         └────────┬────────┘
                                      │
                                      │ Rejection
                                      ▼
 ┌─────────────────┐         ┌─────────────────┐
-│     Chief       │◄────────┤    Principal    │
+│     Chief       │◄────────│    Principal    │
 │    Architect    │ Revise  │    Engineer     │
 └─────────────────┘ Design  └─────────────────┘
 ```
 
 The workflow:
-1. Software Test identifies issues with implementation
+1. SoftwareEngineerInTest identifies issues with implementation
 2. HeadOfSoftwareQuality reviews and makes judgment
 3. If rejected, code is sent back to Engineer
 4. For architectural issues, ChiefArchitect is consulted

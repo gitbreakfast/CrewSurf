@@ -66,6 +66,11 @@ Ollama lets AI models run on your computer.
    pip install crewsurf
    ```
 3. Wait until it says "Successfully installed crewsurf"
+4. Add the search tool by typing this command and pressing Enter:
+   ```
+   pip install duckduckgo-search
+   ```
+5. Wait until it finishes installing
 
 ![Install CrewSurf](images/pip_install.png)
 
